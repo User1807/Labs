@@ -36,7 +36,7 @@ public:
 	//операция доступа по индексу
 	int& operator[](int index);
 	//операция для добавление константы
-	Mnojestvo operator-(const Mnojestvo& a, const Mnojestvo& b);
+	Mnojestvo operator-(const Mnojestvo& a);
 	//операция, возвращающая длину вектора
 	int operator()();
 	//перегруженные операции ввода-вывода

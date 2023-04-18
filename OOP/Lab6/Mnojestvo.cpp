@@ -46,10 +46,13 @@ int& Mnojestvo::operator[](int index)
 	if (index < size) return data[index];
 	else cout << "\nError! Index>size";
 }
-//операция для добавления константы
-Mnojestvo Mnojestvo::operator-(const Mnojestvo& a, const Mnojestvo& b)//a-b
+//операция разности множеств
+Mnojestvo Mnojestvo::operator-(const Mnojestvo& a)
 {
-	return a - b;
+	Mnojestvo temp(size);
+	for (int i = 0; i < size; ++i)
+		temp.data[i] = data[i] - a.data[i];
+	return temp;
 }
 //операция для получения длины вектора
 int Mnojestvo::operator()()
