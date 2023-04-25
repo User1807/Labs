@@ -5,7 +5,7 @@
 #include <fstream>
 
 using namespace std;
-const int MAXLINE = 255; // макс длина строки
+const int MAXLINE = 255;
 
 struct Point
 {
