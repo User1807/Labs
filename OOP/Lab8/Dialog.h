@@ -1,8 +1,8 @@
 #pragma once
-#include"List.h"
+#include"Vector.h"
 #include"Event.h"
 class Dialog :
-	public List
+	public Vector
 {
 public:
 	Dialog(void);//контруктор

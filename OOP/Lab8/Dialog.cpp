@@ -1,10 +1,10 @@
 #include "Dialog.h"
-#include "List.h"
+#include "Vector.h"
 #include <string>
 #include <iostream>
 using namespace std;
 //конструктор
-Dialog::Dialog(void) :List(0)
+Dialog::Dialog(void) :Vector(0)
 {
 	EndState = 0;
 }
@@ -93,7 +93,7 @@ void Dialog::HandleEvent(TEvent& event)
 		case cmQuit:EndExec(); //выход
 			ClearEvent(event);
 			break;
-		default:List::HandleEvent(event);
+		default:Vector::HandleEvent(event);
 		};
 	};
 }
