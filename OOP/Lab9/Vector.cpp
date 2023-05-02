@@ -68,7 +68,7 @@ int Vector::operator [](int i)
 Vector Vector::operator-(const Vector& a)
 {
 	Vector temp(size);
-	for (int i = 0; i < size; ++i)
+	for (int i = 0; i < a.size; ++i)
 		temp.beg[i] = beg[i] - a.beg[i];
 	return temp;
 }
