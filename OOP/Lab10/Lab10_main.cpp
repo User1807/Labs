@@ -46,10 +46,13 @@ void main()
 				cout << "New value: ";
 				cin >> m1;
 				k = add_file(file_name, nom+i+1, m1);
-				if (k == 0 || k == nom) k = add_end(file_name, m1);
 			}
 			if (k < 0) cout << "Can't read file";
-			if (k == 0 || k == nom) k = add_end(file_name, m1);
+			if (k == 0)
+			{
+				for (int i = 0; i < numOfValues; i++)
+					k = add_end(file_name, m1);
+			}
 			break;
 		case 5: cout << "file name? ";
 			cin >> file_name;
